@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BankdrukApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="editTextName">wie gaat er trainen?</string>
+    <string name="editTextExercise">welke oefening ?</string>
+    <string name="buttonStartSession">Start sessie</string>
+    <string name="editTextNumberKg">Hoeveel Kg ?</string>
+    <string name="editTextNumberTimes">Hoeveel keer?</string>
+    <string name="buttonSubmitRecord">Registreer oefening</string>
+    <string name="buttonStopSession">Stop sessie</string>
+</resources>
