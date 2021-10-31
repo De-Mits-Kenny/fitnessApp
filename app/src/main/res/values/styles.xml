@@ -8,6 +8,5 @@
         <item name="android:fontFamily">@font/audiowide</item>
         <item name="android:inputType">textPersonName</item>
         <item name="android:textAlignment">center</item>
-
     </style>
 </resources>

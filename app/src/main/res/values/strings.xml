@@ -9,4 +9,5 @@
     <string name="editTextNumberTimes">Hoeveel keer?</string>
     <string name="buttonSubmitRecord">Registreer oefening</string>
     <string name="buttonStopSession">Stop sessie</string>
+
 </resources>
