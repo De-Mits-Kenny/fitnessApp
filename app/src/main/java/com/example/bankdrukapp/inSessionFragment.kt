@@ -40,8 +40,8 @@ class inSessionFragment : Fragment() {
 
         val view: View = inflater.inflate(R.layout.fragment_in_session, container, false)
 
-        val buttonStartSession: Button = view.findViewById(R.id.buttonStopSession)
-        buttonStartSession.setOnClickListener{ Navigation.findNavController(view).navigate(R.id.action_inSessionFragment_to_startSessionFragment)}
+        val buttonStopSession: Button = view.findViewById(R.id.buttonStopSession)
+        buttonStopSession.setOnClickListener{ Navigation.findNavController(view).navigate(R.id.action_inSessionFragment_to_startSessionFragment)}
         return view
     }
 

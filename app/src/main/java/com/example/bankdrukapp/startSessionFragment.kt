@@ -6,6 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
 import androidx.navigation.Navigation
 
 // TODO: Rename parameter arguments, choose names that match
@@ -39,7 +41,20 @@ class startSessionFragment : Fragment() {
         val view: View = inflater.inflate(R.layout.fragment_start_session, container, false)
 
         val buttonStartSession: Button = view.findViewById(R.id.buttonStartSession)
-        buttonStartSession.setOnClickListener{Navigation.findNavController(view).navigate(R.id.action_startSessionFragment_to_inSessionFragment)}
+        val editTextName: EditText = view.findViewById(R.id.editTextName)
+        val editTextExercise: EditText = view.findViewById(R.id.editTextExercise)
+        val toastMessage: String = getString(R.string.toastMessageFillIn)
+
+        buttonStartSession.setOnClickListener{
+            if (editTextExercise.text.trim().toString().length > 0 && editTextName.text.trim().toString().length > 0){
+                Navigation.findNavController(view).navigate(R.id.action_startSessionFragment_to_inSessionFragment)
+            }
+            else{
+                Toast.makeText(activity, toastMessage, Toast.LENGTH_SHORT).show()
+            }
+            
+        
+        }
         return view
     }
 
