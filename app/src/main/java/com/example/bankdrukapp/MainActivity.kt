@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity(), Communicator {
         bundle.putString("name", name)
         bundle.putString("exercise", exercise)
         val transaction = this.supportFragmentManager.beginTransaction()
-        val fragmentInSession = inSessionFragment()
+        val fragmentInSession = InSessionFragment()
         fragmentInSession.arguments = bundle
         transaction.replace(R.id.fragment_container, fragmentInSession)
         transaction.commit()
