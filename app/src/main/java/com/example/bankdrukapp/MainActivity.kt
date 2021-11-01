@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity(), Communicator {
         val fragmentStartSession = startSessionFragment()
         supportFragmentManager.beginTransaction().replace(binding.fragmentContainer.id, fragmentStartSession).commit()
 
+        val buttonToSearch: Button = findViewById(R.id.buttonToSearch)
         buttonToSearch.setOnClickListener {
             val intent = Intent(this, FilterActivity::class.java)
             startActivity(intent)
