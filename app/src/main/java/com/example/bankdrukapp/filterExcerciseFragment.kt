@@ -28,6 +28,7 @@ class filterExcerciseFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_filter_excercise, container, false)
 
+        // set the navigation to the other fragment
         val buttonNavToCalender: Button = view.findViewById(R.id.buttonNavToCalender)
         buttonNavToCalender.setOnClickListener{
             Navigation.findNavController(view).navigate(R.id.action_filterExcerciseFragment_to_filterCalenderFragment)
@@ -46,9 +47,9 @@ class filterExcerciseFragment : Fragment() {
             adapter.setData(record)
         })
 
+        // change the recyclerview when you search
         val editTextInput: EditText = view.findViewById(R.id.editTextSearch)
         val input = editTextInput.text.toString()
-
         val buttonSearch: Button = view.findViewById(R.id.buttonSearch)
         buttonSearch.setOnClickListener{
             recordViewModel.searchDatabase("%$input%").observe(viewLifecycleOwner, Observer { record ->
