@@ -21,10 +21,11 @@ class ListAdapter: RecyclerView.Adapter<ListAdapter.MyViewHolder>() {
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val currentItem = recordList[position]
-        holder.itemView.recycleName.text = currentItem.name.toString()
-        holder.itemView.recycleExersize.text = currentItem.exercise.toString()
+        holder.itemView.recycleName.text = currentItem.name
+        holder.itemView.recycleExersize.text = currentItem.exercise
         holder.itemView.recycleKg.text = currentItem.kg.toString() + " Kg"
         holder.itemView.recycleTimes.text = currentItem.times.toString() + " X"
+        holder.itemView.recyclerDate.text = currentItem.date
     }
 
     override fun getItemCount(): Int {

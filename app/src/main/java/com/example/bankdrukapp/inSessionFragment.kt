@@ -17,11 +17,13 @@ import com.example.bankdrukapp.data.RecordViewModel
 import kotlinx.android.synthetic.main.fragment_in_session.*
 import kotlinx.android.synthetic.main.fragment_in_session.view.*
 import java.time.LocalDate
+import java.util.*
 
 class InSessionFragment : Fragment() {
 
     private var name: String? = ""
     private var exercise: String? = ""
+    private var date: String = LocalDate.now().toString()
 
     private lateinit var communicator: Communicator
     private lateinit var recordViewModel: RecordViewModel
@@ -78,11 +80,12 @@ class InSessionFragment : Fragment() {
         val exerciseData = exercise.toString()
         val kgData = editTextNumberKg.text.toString()
         val timesData = editTextNumberTimes.text.toString()
-        val dateData = LocalDate.now()
+        val dateData = date
+
 
         if(inputCheck(kgData, timesData)){
             //Create record
-            val record = Record(0,nameData, exerciseData, kgData.toInt(), timesData.toInt())
+            val record = Record(0,nameData, exerciseData, kgData.toInt(), timesData.toInt(),dateData)
             //Add Data to Database
             recordViewModel.addRecord(record)
             Toast.makeText(requireContext(), "succes", Toast.LENGTH_LONG).show()

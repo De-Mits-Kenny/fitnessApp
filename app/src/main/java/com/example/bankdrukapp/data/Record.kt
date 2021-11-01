@@ -2,6 +2,7 @@ package com.example.bankdrukapp.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import java.io.StringBufferInputStream
 import java.time.LocalDate
 import java.util.*
 
@@ -12,5 +13,6 @@ data class Record (
     val name: String,
     val exercise: String,
     val kg: Int,
-    val times: Int
+    val times: Int,
+    val date: String
 )
