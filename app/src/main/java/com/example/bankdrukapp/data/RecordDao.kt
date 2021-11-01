@@ -12,6 +12,7 @@ interface RecordDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun addRecord (record: Record)
 
-    @Query("SELECT * FROM Record ORDER BY id ASC")
+    @Query("SELECT * FROM Record ORDER BY id desc")
     fun readAllData(): LiveData<List<Record>>
+
 }

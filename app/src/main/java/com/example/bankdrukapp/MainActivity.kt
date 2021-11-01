@@ -3,6 +3,7 @@ package com.example.bankdrukapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
+import androidx.databinding.DataBindingUtil.setContentView
 import com.example.bankdrukapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), Communicator {
@@ -10,7 +11,7 @@ class MainActivity : AppCompatActivity(), Communicator {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding = setContentView(this, R.layout.activity_main)
 
 
         val fragmentStartSession = startSessionFragment()
