@@ -11,7 +11,8 @@
     <string name="toastMessageFillIn">Gelieve alle velden in te vullen</string>
     <string name="buttonToActivitySearch">zoeken</string>
     <string name="buttonBackToSession">Sessie</string>
-    <string name="buttonNavToSearch">Naar zoeken</string>
+    <string name="buttonNavToSearch">Verfijnd zoeken</string>
     <string name="buttonNavToCalender">Naar Calender</string>
     <string name="editTextSearchHint">Zoekopdracht ?</string>
+    <string name="buttonSearch">Zoeken</string>
 </resources>
