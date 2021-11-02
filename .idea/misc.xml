@@ -4,13 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/kdemi/Desktop/Vives/2de jaar/Mobile applications/BankdrukApp/app/src/main/res/layout/activity_filter.xml" value="0.33" />
-        <entry key="..\:/Users/kdemi/Desktop/Vives/2de jaar/Mobile applications/BankdrukApp/app/src/main/res/layout/activity_main.xml" value="0.3392210144927536" />
+        <entry key="..\:/Users/kdemi/Desktop/Vives/2de jaar/Mobile applications/BankdrukApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/kdemi/Desktop/Vives/2de jaar/Mobile applications/BankdrukApp/app/src/main/res/layout/custom_row.xml" value="0.67" />
         <entry key="..\:/Users/kdemi/Desktop/Vives/2de jaar/Mobile applications/BankdrukApp/app/src/main/res/layout/fragment_filter_calender.xml" value="0.33" />
         <entry key="..\:/Users/kdemi/Desktop/Vives/2de jaar/Mobile applications/BankdrukApp/app/src/main/res/layout/fragment_filter_excercise.xml" value="0.33" />
         <entry key="..\:/Users/kdemi/Desktop/Vives/2de jaar/Mobile applications/BankdrukApp/app/src/main/res/layout/fragment_in_session.xml" value="0.25" />
-        <entry key="..\:/Users/kdemi/Desktop/Vives/2de jaar/Mobile applications/BankdrukApp/app/src/main/res/layout/fragment_start_session.xml" value="0.22" />
+        <entry key="..\:/Users/kdemi/Desktop/Vives/2de jaar/Mobile applications/BankdrukApp/app/src/main/res/layout/fragment_start_session.xml" value="0.1729957805907173" />
         <entry key="..\:/Users/kdemi/Desktop/Vives/2de jaar/Mobile applications/BankdrukApp/app/src/main/res/menu/main_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/kdemi/Desktop/Vives/2de jaar/Mobile applications/BankdrukApp/app/src/main/res/mipmap-anydpi-v26/ic_bench_press.xml" value="0.2703125" />
+        <entry key="..\:/Users/kdemi/Desktop/Vives/2de jaar/Mobile applications/BankdrukApp/app/src/main/res/mipmap-anydpi-v26/ic_bench_press_round.xml" value="0.2703125" />
+        <entry key="..\:/Users/kdemi/Desktop/Vives/2de jaar/Mobile applications/BankdrukApp/app/src/main/res/mipmap-anydpi-v26/ic_workout.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/kdemi/Desktop/Vives/2de jaar/Mobile applications/BankdrukApp/app/src/main/res/mipmap-anydpi-v26/ic_workout_round.xml" value="0.11666666666666667" />
       </map>
     </option>
   </component>

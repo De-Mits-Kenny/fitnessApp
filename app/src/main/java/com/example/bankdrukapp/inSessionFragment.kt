@@ -88,10 +88,10 @@ class InSessionFragment : Fragment() {
             //Add Data to Database
             recordViewModel.addRecord(record)
             //Show toast
-            Toast.makeText(requireContext(), "succes", Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(), "succes", Toast.LENGTH_SHORT).show()
         }
         else{
-            Toast.makeText(requireContext(), "zorg dat je alles invult", Toast.LENGTH_LONG).show()
+            Toast.makeText(requireContext(), "zorg dat je alles invult", Toast.LENGTH_SHORT).show()
         }
     }
 
