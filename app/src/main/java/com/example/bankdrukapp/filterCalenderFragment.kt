@@ -7,16 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.CalendarView
-import android.widget.EditText
-import android.widget.Toast
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.bankdrukapp.data.RecordViewModel
-import kotlinx.android.synthetic.main.fragment_filter_calender.*
 import kotlinx.android.synthetic.main.fragment_filter_calender.view.*
-import kotlinx.android.synthetic.main.fragment_filter_excercise.view.*
+
 
 
 class filterCalenderFragment : Fragment() {
@@ -44,27 +40,25 @@ class filterCalenderFragment : Fragment() {
         val recyclerView = view.recyclerCalender
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        recordViewModel.readAllData.observe(viewLifecycleOwner, Observer { record ->
+        recordViewModel.readAllData.observe(viewLifecycleOwner,  { record ->
             adapter.setData(record)
         })
 
         // change the recyclerview on date changed
         val calender: CalendarView = view.findViewById(R.id.calendarView)
-
-
         calender.setOnDateChangeListener(object : CalendarView.OnDateChangeListener {
             override fun onSelectedDayChange(p0: CalendarView, p1: Int, p2: Int, p3: Int) {
 
                 if (p3<10){
                     val p5 = "0$p3"
                     recordViewModel.searchDatabaseOnDate("$p1-${p2 + 1}-$p5")
-                        .observe(viewLifecycleOwner, Observer { record ->
+                        .observe(viewLifecycleOwner, { record ->
                             adapter.setData(record)
                         })
                 }
                 else{
                     recordViewModel.searchDatabaseOnDate("$p1-${p2 + 1}-$p3")
-                        .observe(viewLifecycleOwner, Observer { record ->
+                        .observe(viewLifecycleOwner, { record ->
                             adapter.setData(record)
                         })
                 }

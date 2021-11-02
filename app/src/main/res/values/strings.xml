@@ -3,16 +3,16 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="editTextName">wie gaat er trainen?</string>
     <string name="editTextExercise">welke oefening ?</string>
-    <string name="buttonStartSession">Start sessie</string>
+    <string name="editTextSearchHint">Zoekopdracht ?</string>
     <string name="editTextNumberKg">Hoeveel Kg ?</string>
     <string name="editTextNumberTimes">Hoeveel keer?</string>
+    <string name="buttonStartSession">Start sessie</string>
+    <string name="buttonBackToSession">Sessie</string>
     <string name="buttonSubmitRecord">Registreer oefening</string>
     <string name="buttonStopSession">Stop sessie</string>
     <string name="toastMessageFillIn">Gelieve alle velden in te vullen</string>
     <string name="buttonToActivitySearch">zoeken</string>
-    <string name="buttonBackToSession">Sessie</string>
-    <string name="buttonNavToSearch">Verfijnd zoeken</string>
-    <string name="buttonNavToCalender">Naar Calender</string>
-    <string name="editTextSearchHint">Zoekopdracht ?</string>
     <string name="buttonSearch">Zoeken</string>
+    <string name="buttonNavToSearch">Verfijnd zoeken</string>
+    <string name="buttonNavToCalender">kalender</string>
 </resources>

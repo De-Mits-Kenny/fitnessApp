@@ -27,8 +27,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:layout_marginEnd="25dp"
-            android:backgroundTint="@android:color/holo_blue_dark"
+            android:backgroundTint="@color/darkGreen"
             android:text="@string/buttonToActivitySearch"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

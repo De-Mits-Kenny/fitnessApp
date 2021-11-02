@@ -7,15 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import androidx.lifecycle.Observer
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.bankdrukapp.data.RecordViewModel
-import kotlinx.android.synthetic.main.fragment_filter_calender.*
-import kotlinx.android.synthetic.main.fragment_filter_excercise.*
 import kotlinx.android.synthetic.main.fragment_filter_excercise.view.*
-import kotlinx.android.synthetic.main.fragment_in_session.view.*
 
 class filterExcerciseFragment : Fragment() {
 
@@ -43,16 +40,16 @@ class filterExcerciseFragment : Fragment() {
         val recyclerView = view.recyclerSearch
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
-        recordViewModel.readAllData.observe(viewLifecycleOwner, Observer { record ->
+        recordViewModel.readAllData.observe(viewLifecycleOwner,  { record ->
             adapter.setData(record)
         })
 
         // change the recyclerview when you search
         val editTextInput: EditText = view.findViewById(R.id.editTextSearch)
-        val input = editTextInput.text.toString()
+        val input = editTextInput.text
         val buttonSearch: Button = view.findViewById(R.id.buttonSearch)
         buttonSearch.setOnClickListener{
-            recordViewModel.searchDatabase("%$input%").observe(viewLifecycleOwner, Observer { record ->
+            recordViewModel.searchDatabase("%$input%").observe(viewLifecycleOwner,  { record ->
                 adapter.setData(record)
         })
         }

@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.bankdrukapp.data.Record
@@ -17,7 +16,6 @@ import com.example.bankdrukapp.data.RecordViewModel
 import kotlinx.android.synthetic.main.fragment_in_session.*
 import kotlinx.android.synthetic.main.fragment_in_session.view.*
 import java.time.LocalDate
-import java.util.*
 
 class InSessionFragment : Fragment() {
 
@@ -57,7 +55,7 @@ class InSessionFragment : Fragment() {
         recyclerView.adapter = adapter
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-        recordViewModel.readAllData.observe(viewLifecycleOwner, Observer { record ->
+        recordViewModel.readAllData.observe(viewLifecycleOwner, { record ->
             adapter.setData(record)
         })
 

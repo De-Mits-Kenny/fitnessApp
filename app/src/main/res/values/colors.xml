@@ -8,4 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="calender">#E8F77272</color>
+    <color name="blueHolo">#9A5CF8EB</color>
+    <color name="brightRed">#E3FF0000</color>
+    <color name="dark">#7E75615E</color>
+    <color name="darkGreen">#2780FF8D</color>
 </resources>
