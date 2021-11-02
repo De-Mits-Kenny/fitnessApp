@@ -41,4 +41,6 @@ class startSessionFragment : Fragment() {
         return view
     }
 
+
+
 }

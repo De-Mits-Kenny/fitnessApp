@@ -1,5 +1,6 @@
 package com.example.bankdrukapp
 
+
 import android.os.Bundle
 import android.text.TextUtils
 import androidx.fragment.app.Fragment
@@ -86,6 +87,7 @@ class InSessionFragment : Fragment() {
             val record = Record(0,nameData, exerciseData, kgData.toInt(), timesData.toInt(),dateData)
             //Add Data to Database
             recordViewModel.addRecord(record)
+            //Show toast
             Toast.makeText(requireContext(), "succes", Toast.LENGTH_LONG).show()
         }
         else{

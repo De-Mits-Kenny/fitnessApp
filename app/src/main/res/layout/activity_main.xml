@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
             android:layout_marginEnd="25dp"
-            android:backgroundTint="@color/darkGreen"
+            android:backgroundTint="@color/darkBlue"
             android:text="@string/buttonToActivitySearch"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
