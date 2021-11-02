@@ -29,7 +29,7 @@
             android:layout_marginEnd="25dp"
             android:backgroundTint="@color/darkGreen"
             android:text="@string/buttonToActivitySearch"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,4 +12,6 @@
     <color name="brightRed">#E3FF0000</color>
     <color name="dark">#7E75615E</color>
     <color name="darkGreen">#2780FF8D</color>
+    <color name="darkRed">#80FD1100</color>
+    <color name="darkBlue">#800019FF</color>
 </resources>

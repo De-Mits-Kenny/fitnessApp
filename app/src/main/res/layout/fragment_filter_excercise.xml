@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
-            android:backgroundTint="@android:color/holo_green_dark"
+            android:backgroundTint="@color/darkGreen"
             android:text="@string/buttonSearch"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginTop="25dp"
-            android:backgroundTint="@android:color/holo_blue_dark"
+            android:backgroundTint="@color/darkBlue"
             android:text="@string/buttonNavToCalender"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
