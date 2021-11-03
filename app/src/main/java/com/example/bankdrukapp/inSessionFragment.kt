@@ -82,7 +82,7 @@ class InSessionFragment : Fragment() {
         val dateData = date
 
         val toastMessageFillIn: String = getString(R.string.toastMessageFillIn)
-        val toastMessageSucces: String = getString(R.string.toastMessageFillIn)
+        val toastMessageSucces: String = getString(R.string.toastMessageSucces)
 
 
         if(inputCheck(kgData, timesData)){
