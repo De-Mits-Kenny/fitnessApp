@@ -81,6 +81,9 @@ class InSessionFragment : Fragment() {
         val timesData = editTextNumberTimes.text.toString()
         val dateData = date
 
+        val toastMessageFillIn: String = getString(R.string.toastMessageFillIn)
+        val toastMessageSucces: String = getString(R.string.toastMessageFillIn)
+
 
         if(inputCheck(kgData, timesData)){
             //Create record
@@ -88,10 +91,10 @@ class InSessionFragment : Fragment() {
             //Add Data to Database
             recordViewModel.addRecord(record)
             //Show toast
-            Toast.makeText(requireContext(), "succes", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), toastMessageSucces, Toast.LENGTH_SHORT).show()
         }
         else{
-            Toast.makeText(requireContext(), "zorg dat je alles invult", Toast.LENGTH_SHORT).show()
+            Toast.makeText(requireContext(), toastMessageFillIn, Toast.LENGTH_SHORT).show()
         }
     }
 

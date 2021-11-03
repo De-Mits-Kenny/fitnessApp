@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Workout Records</string>
+    <string name="editTextName">who is going to train ?</string>
+    <string name="editTextExercise">which exercise ?</string>
+    <string name="editTextSearchHint">Search request ?</string>
+    <string name="editTextNumberKg">How many Kg ?</string>
+    <string name="editTextNumberTimes">How many times ?</string>
+    <string name="buttonStartSession">Start session</string>
+    <string name="buttonBackToSession">Session</string>
+    <string name="buttonSubmitRecord">Register exercise</string>
+    <string name="buttonStopSession">Stop session</string>
+    <string name="toastMessageFillIn">Please fill in all fields</string>
+    <string name="toastMessageSucces">Successfully added</string>
+    <string name="buttonToActivitySearch">Overview</string>
+    <string name="buttonSearch">Search</string>
+    <string name="buttonNavToSearch">Search</string>
+    <string name="buttonNavToCalender">Calender</string>
+</resources>
